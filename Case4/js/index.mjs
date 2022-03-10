@@ -4,3 +4,7 @@ function toggleShowCompletedHandler (event) {
         item.classList.toggle("hidden");
     }
 }
+
+const buttonClean = document.querySelector("button")
+
+buttonClean.addEventListener("click", toggleShowCompletedHandler);
