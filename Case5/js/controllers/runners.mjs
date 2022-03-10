@@ -1,3 +1,5 @@
+import runners from "../models/runners.mjs";
+
 export function dataToHTMLList (array) {
     const HTMLElements = array.map(
         (item) => {
@@ -5,6 +7,8 @@ export function dataToHTMLList (array) {
             const tdName = document.createElement("td");
             const tdTime = document.createElement("td");
             row.append(tdName, tdTime);
+            tdName.innerText = item.name;
+            tdTime.innerText = item.time;
             return row;
         }
     )
