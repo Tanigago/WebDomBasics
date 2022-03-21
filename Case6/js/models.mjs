@@ -1,10 +1,10 @@
 export let tasks = [
     {
-        description: "Compar pan",
+        description: "Comprar pan",
         completed: true
     },
     {
-        description: "Compar chorizos",
+        description: "Comprar chorizos",
         completed: false
     },
 ];
